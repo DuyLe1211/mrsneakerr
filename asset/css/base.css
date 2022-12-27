@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Cascadia Mono';
+    src: url('fonts/CascadiaMono-Regular.woff') format('woff');
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cascadia Mono', sans-serif;
+}

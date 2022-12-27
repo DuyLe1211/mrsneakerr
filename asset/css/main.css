@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(90deg, #C2B9AD, #D9D7CC);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid {
+    width: calc(100% - 80px);
+    height: 100%;
+    margin:0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.header__logo {
+    color: rgb(50, 50, 50);
+    font-size: 1.75em;
+    margin:  0;
+}
+
+.header__logo {
+    cursor: default;
+}
+
+.header__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 1.75em;
+    color: rgb(50, 50, 50);
+    margin-right: 3.75em;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+.header__link:hover {
+    color: rgb(14, 14, 14);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.body__img {
+    width: 6.25em;
+}
+
+.body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.body__text {
+    width: 27.2em;
+    margin-right: 2.5em;
+}
+
+.body__text__title {
+    font-size: 2.5em;
+}
+
+.body__text__desc {
+    font-size: 2em;
+}
+
+.body__text__btn {
+    width: 8.75em;
+    height: 2.75em;
+    background-color: #3F6D8D;
+    color: #fff;
+    font-size: 1.75em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.body__text__btn:hover {
+    background-color: #2e5570;
+    color: rgb(232, 232, 232);
+}
+
+.body__img {
+    width: 33.75em;
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    body {
+        font-size: 8px;
+    }
+
+    .body {
+        flex-direction: column-reverse;
+    }
+
+    .body__text {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .header__list {
+        display: none;
+    }
+}
