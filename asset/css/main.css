@@ -60,11 +60,14 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .body__text {
     width: 27.2em;
     margin-right: 2.5em;
+    transition: 0.4s;
+    overflow: hidden;
 }
 
 .body__text__title {
@@ -76,6 +79,7 @@ body {
 }
 
 .body__text__btn {
+    position: relative;
     width: 8.75em;
     height: 2.75em;
     background-color: #3F6D8D;
@@ -85,6 +89,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.1s;
+    z-index: 100;
 }
 
 .body__text__btn:hover {
@@ -93,8 +98,13 @@ body {
 }
 
 .body__img {
+    position:relative;
+    z-index:-1; 
     width: 33.75em;
+    transition: 0.4s;
 }
+
+/* Responsive */
 
 @media only screen and (max-width: 1025px) {
     body {
@@ -140,4 +150,23 @@ body {
     .header__list {
         display: none;
     }
+}
+
+/* On Click */
+
+.product-click:hover {
+    color: none;
+}
+
+.product-click {
+    color: rgb(14, 14, 14);
+}
+
+.body__text--click {
+    transform: translate(-2.4em, -8em);
+    width: 50em;
+}
+
+.body__img--click {
+    transform: translate(-50em, 7em) rotate(22deg);
 }
