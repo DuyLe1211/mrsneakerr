@@ -153,6 +153,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 426px) {
+    body {
+        font-size: 7px;
+    }
+}
+
 /* On Click */
 
 .product-click:hover {
