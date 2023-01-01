@@ -22,7 +22,7 @@ body {
 
 .header__logo {
     color: rgb(50, 50, 50);
-    font-size: 1.75em;
+    font-size: 1.8vw;
     margin:  0;
     cursor: default;
 }
@@ -36,9 +36,9 @@ body {
 
 .header__link {
     text-decoration: none;
-    font-size: 1.75em;
+    font-size: 1.8vw;
     color: rgb(50, 50, 50);
-    margin-right: 3.75em;
+    margin-right: 6vw;
     font-weight: 600;
     transition: 0.1s;
 }
@@ -62,21 +62,21 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-right: 2vw;
 }
 
 .body__text {
     width: 30vw;
-    margin-right: 2.5em;
     transition: 0.4s;
     overflow: hidden;
 }
 
 .body__text__title {
-    font-size: 2.5em;
+    font-size: 2.6vw;
 }
 
 .body__text__desc {
-    font-size: 2em;
+    font-size: 2.1vw;
 }
 
 .body__text__btn {
@@ -85,7 +85,7 @@ body {
     height: 10vh;
     background-color: #3F6D8D;
     color: #fff;
-    font-size: 1.75em;
+    font-size: 1.8vw;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -101,11 +101,12 @@ body {
 .body__img {
     position:relative;
     z-index:-1; 
-    width: 33.75em;
+    width: 35vw;
     transition: 0.4s;
 }
 
 /* Responsive */
+
 
 @media only screen and (max-width: 1025px) {
     body {
@@ -133,31 +134,14 @@ body {
         justify-content: center;
     }
 
+}
+@media only screen and (max-width: 1446px) {
     .body {
-        flex-direction: column-reverse;
-    }
-
-    .body__text {
-        width: 100%;
-        margin-right: 0;
-        margin-left: 5%;
-    }
-
-    .body__img {
-        margin-top: -8em;
-        margin-bottom: 2em;
-    }
-
-    .header__list {
-        display: none;
+        margin-right: 0.5vw;
+        overflow: visible;
     }
 }
 
-@media only screen and (max-width: 426px) {
-    body {
-        font-size: 7px;
-    }
-}
 
 /* On Click */
 
@@ -169,13 +153,14 @@ body {
     color: rgb(14, 14, 14);
 }
 
+
 .body__text--click {
-    transform: translate(-2.4em, -8em);
-    width: 50em;
+    transform: translate(-2.2vw, -20vh);
+    width: 51.9vw;
 }
 
 .body__img--click {
-    transform: translate(-50em, 7em) rotate(22deg);
+    transform: translate(-52vw, 15vh) rotate(22deg);
 }
 
 
